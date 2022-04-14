@@ -23,7 +23,24 @@
              tot
             });  
         }
-        
+        if(chk1.isSelected())
+        {
+            String hotchoclate = chk1.getText();
+            price = 100;
+            qty = Integer.parseInt(txt1.getValue().toString());
+            
+            tot = price * qty;
+            model = (DefaultTableModel)jTable1.getModel();
+            
+            model.addRow(new Object[]
+            {
+            
+            hotchoclate,
+             price,
+             qty,
+             tot
+            });  
+        }
          if(chk2.isSelected())
         {
             String Mango  = chk2.getText();
