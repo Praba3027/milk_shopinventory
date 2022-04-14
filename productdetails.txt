@@ -1,0 +1,114 @@
+ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        int sum = 0;
+        int price;
+        int qty;
+        int tot = 0;
+        
+        if(chk1.isSelected())
+        {
+            String Strawberry = chk1.getText();
+            price = 100;
+            qty = Integer.parseInt(txt1.getValue().toString());
+            
+            tot = price * qty;
+            model = (DefaultTableModel)jTable1.getModel();
+            
+            model.addRow(new Object[]
+            {
+            
+            Strawberry,
+             price,
+             qty,
+             tot
+            });  
+        }
+        
+         if(chk2.isSelected())
+        {
+            String Mango  = chk2.getText();
+            price = 80;
+            qty = Integer.parseInt(txt2.getValue().toString());
+            
+            tot = price * qty;
+            model = (DefaultTableModel)jTable1.getModel();
+            
+            model.addRow(new Object[]
+            {
+            
+            Mango,
+             price,
+             qty,
+             tot
+            });  
+        }
+        
+           if(chk3.isSelected())
+        {
+            String Vanilla   = chk3.getText();
+            price = 70;
+            qty = Integer.parseInt(txt3.getValue().toString());
+            
+            tot = price * qty;
+            model = (DefaultTableModel)jTable1.getModel();
+            
+            model.addRow(new Object[]
+            {
+            
+            Vanilla,
+             price,
+             qty,
+             tot
+            });  
+        }
+        
+         if(chk4.isSelected())
+        {
+            String Chocolate   = chk4.getText();
+            price = 70;
+            qty = Integer.parseInt(txt4.getValue().toString());
+            
+            tot = price * qty;
+            model = (DefaultTableModel)jTable1.getModel();
+            
+            model.addRow(new Object[]
+            {
+            
+            Chocolate,
+             price,
+             qty,
+             tot
+            });  
+        }
+        
+        if(chk5.isSelected())
+        {
+            String Coffee   = chk5.getText();
+            price = 60;
+            qty = Integer.parseInt(txt5.getValue().toString());
+            
+            tot = price * qty;
+            model = (DefaultTableModel)jTable1.getModel();
+            
+            model.addRow(new Object[]
+            {
+            
+            Coffee,
+             price,
+             qty,
+             tot
+            });  
+        }
+        
+        
+        
+        for(int i=0; i <jTable1.getRowCount(); i++)
+        {
+            sum = sum + Integer.parseInt(jTable1.getValueAt(i, 3).toString());
+            
+        }
+        
+        txtsub.setText(Integer.toString(sum));
+        
+        
+    }
