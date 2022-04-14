@@ -8,7 +8,7 @@
         if(chk1.isSelected())
         {
             String Strawberry = chk1.getText();
-            price = 100;
+            price = 145;
             qty = Integer.parseInt(txt1.getValue().toString());
             
             tot = price * qty;
@@ -46,7 +46,7 @@
            if(chk3.isSelected())
         {
             String Vanilla   = chk3.getText();
-            price = 70;
+            price = 90;
             qty = Integer.parseInt(txt3.getValue().toString());
             
             tot = price * qty;
@@ -65,7 +65,7 @@
          if(chk4.isSelected())
         {
             String Chocolate   = chk4.getText();
-            price = 70;
+            price = 75;
             qty = Integer.parseInt(txt4.getValue().toString());
             
             tot = price * qty;
@@ -84,7 +84,7 @@
         if(chk5.isSelected())
         {
             String Coffee   = chk5.getText();
-            price = 60;
+            price = 65;
             qty = Integer.parseInt(txt5.getValue().toString());
             
             tot = price * qty;
